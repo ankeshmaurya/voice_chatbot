@@ -291,7 +291,7 @@ if not default_key:
 with st.sidebar:
     st.header("Settings")
     api_key = st.text_input("Groq API key", type="password", value=default_key)
-    llm_model = st.text_input("LLM model", value="llama-3.3-70b-versatile")
+    llm_model = st.text_input("LLM model", value="openai/gpt-oss-120b")
     stt_model = st.text_input("Whisper model", value="whisper-large-v3-turbo")
     language = st.text_input("Spoken language code (blank = auto)", value="en")
     length_choice = st.selectbox("Answer length", list(LENGTH_RULES.keys()), index=0)
